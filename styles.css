@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(240,113,56,0.85);
+}
+#outer {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(240,113,56,0.85);
+	padding-top: 10vw;	
+}
+#screen, #input, #cal {
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin: 5px auto;
+}
+#screen {
+	max-width: 274px;
+	height: 50px;
+	font-size: 32px;
+	color: rgba(252,233,209,1);
+}
+#cal {
+	display: block;
+	width: 274px;
+	text-align: right;
+	height: 30px;
+	font-size: 24px;
+	color: rgba(238,162,200,1);
+}
+div.inner {
+	display: block;
+	width: 274px;
+	margin: auto;
+    background-color: rgba(55,55,55,0.25);
+	border-radius: 5px;
+}
+.container {
+	height: auto;
+	width: 500px;
+    border-collapse: collapse;
+	display: inline;
+	text-align: center;
+}
+.row {
+	width: 100%;
+	margin: 1px;
+}
+.num, .sym, .dec {
+	width: 24%;
+	float: left;
+	cursor: pointer;
+	border: 1px solid rgba(8,41,62,1);
+	border-radius: 5px;
+	margin:1px;
+}
+.num, .dec {
+	background-color: rgba(65,155,156,1);
+	color: rgba(8,41,62,1);
+	transition: all 0.25s ease;
+}
+.sym {
+	background-color: rgba(252,212,99,1);
+	color: rgba(8,41,62,1);
+	transition: all 0.25s ease;
+}
+.num:hover, .sym:hover, .dec:hover {
+	transform: scale(0.95);
+}
+#clear {
+	width: 98%;
+	background-color: rgba(126,97,155,0.9);
+}
+td.num, td.sym, td.dec {
+	padding: 25px;
+	font-size: 24px;
+}
+footer {
+	position: fixed;
+	letter-spacing: 10px;
+	bottom: 0;
+	right: 0;
+}
+footer > div {
+	color: rgba(252,233,209,1);
+}
