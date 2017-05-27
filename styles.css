@@ -54,7 +54,7 @@ div.inner {
 	width: 100%;
 	margin: 1px;
 }
-.num, .sym, .dec {
+.num, .sym, .dec, .cln {
 	width: 24%;
 	float: left;
 	cursor: pointer;
@@ -67,19 +67,19 @@ div.inner {
 	color: rgba(8,41,62,1);
 	transition: all 0.25s ease;
 }
-.sym {
+.sym, .cln {
 	background-color: rgba(252,212,99,1);
 	color: rgba(8,41,62,1);
 	transition: all 0.25s ease;
 }
-.num:hover, .sym:hover, .dec:hover {
+.num:hover, .sym:hover, .dec:hover, .cln:hover {
 	transform: scale(0.95);
 }
 #clear {
 	width: 98%;
 	background-color: rgba(126,97,155,0.9);
 }
-td.num, td.sym, td.dec {
+td.num, td.sym, td.dec, td.cln {
 	padding: 25px;
 	font-size: 24px;
 }

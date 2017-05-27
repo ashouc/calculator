@@ -78,7 +78,7 @@ function onClick() {
 		indicator = true;
 		if(prevNum.toString().length >= 10) {
 			$('#screen').css({
-				fontSize: '28px'
+				fontSize: '24px'
 			});
 		}	
 	});
@@ -87,7 +87,7 @@ function onClick() {
 		count = null; numInt = 0; prevNum = null; currNum = 0; tempNum = null; tempOp = null; nextOp = null; currOp = null; 
 		$("#screen").html(0);
 		$("#cal").html(' ');
-
+		indicator = false;
 	});
 
 }
