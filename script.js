@@ -1,14 +1,14 @@
 $(document).ready(onClick);
 
 function onClick() {
-	var count = null;
+	var count = null; //Number of digits before a decimal point
 	var indicator = false; // To test if screen is empty
 	var prevNum = null;
 	var currNum = 0;
-	var tempNum = null;// intermediate number
-	var tempOp = null; // intermediate operator
+	var tempNum = null;// Intermediate number
+	var tempOp = null; // Intermediate operator
 	var nextOp = null;
-	var currOp = null; // Connects prevNum to currNum
+	var currOp = null; // Operation between prevNum and currNum
 
 	$("#decimal").on("click", function(event) {
 		if(count === null) {
@@ -30,9 +30,7 @@ function onClick() {
  		}
  		if(count !== null) {
  			count++;
- 			console.log(count);
  			currNum = currNum  + parseInt(event.target.innerHTML) / Math.pow(10,count);	
-			console.log(currNum);		
  		} 
  		$("#cal").append(event.target.innerHTML);
 	});
@@ -69,7 +67,6 @@ function onClick() {
 			}			
 			return;
 		}
-
 		// Multiplicative operation following an additive operation:
 		tempNum = currNum; tempOp = nextOp; currNum = 0; nextOp = null;
 	});
